@@ -172,17 +172,40 @@
 ---
 
 ## Algorithm  
+---
 
-### Program 1: Constructor and Destructor Example  
+### Program 1: Constructors 
 
-1. Start the program.  
-2. Create a class `Car` with members `brand` and `model`.  
-3. Define a **parameterized constructor** to initialize brand and model.  
-4. Define a **destructor** to display a cleanup message.  
-5. In `main()`, create an object of `Car`.  
-6. Observe **constructor message on creation**.  
-7. Observe **destructor message on program exit**.  
-8. End the program.  
+1. Start the program.
+2. Create a class fetch with:
+   - Data members a and b.
+   - Default Constructor: initializes a=3, b=4.
+   - Parameterized Constructor: takes m and n → initializes a=m, b=n.
+   - Copy Constructor: takes reference to another object and copies its a and b.
+   - Function disp() to display values of a and b.
+3. In main():
+   - Create object f1 → calls default constructor.
+   - Create object f2(2,3) → calls parameterized constructor.
+   - Create object f3(f2) → calls copy constructor using f2.
+   - Display values of f1, f2, f3 using disp().
+4. End program.
+
+### Program 2: Destructors 
+
+1. Start the program.
+2. Declare a global variable count and initialize it to 0.
+3. Create a class destruct with:
+   - Constructor: increments count and prints the number of objects created.
+   - Destructor: decrements count and prints the number of objects destroyed.
+4. In main():
+   - Create objects aa, bb, cc.
+        - Each creation calls the constructor and updates count.
+   - Enter a new block and create object dd.
+        - Constructor is called → count incremented.
+        - When block ends, dd goes out of scope → destructor called → count decremented.
+5. End of main():
+   - Remaining objects (aa, bb, cc) go out of scope → destructors called → count decremented for each.
+6. End program.
 
 ---
 
