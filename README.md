@@ -174,23 +174,47 @@
 ## Algorithm  
 ---
 
-### Program 1: Constructors 
+### Copy constructors
+
+1. Start program.
+2. Define class student with data members (rno, name, fee).
+3. Create:
+    - Parameterized constructor → initializes values.
+    - Copy constructor → copies values from another object.
+    - display() function → shows values.
+4. In main():
+    - Create object s using parameterized constructor.
+    - Display details.
+    - Create object student1(s) using copy constructor.
+    - Display copied details.
+5. End program.
+
+### Default constructors
 
 1. Start the program.
-2. Create a class fetch with:
-   - Data members a and b.
-   - Default Constructor: initializes a=3, b=4.
-   - Parameterized Constructor: takes m and n → initializes a=m, b=n.
-   - Copy Constructor: takes reference to another object and copies its a and b.
-   - Function disp() to display values of a and b.
-3. In main():
-   - Create object f1 → calls default constructor.
-   - Create object f2(2,3) → calls parameterized constructor.
-   - Create object f3(f2) → calls copy constructor using f2.
-   - Display values of f1, f2, f3 using disp().
-4. End program.
+2. Define a class Construct with data members a and b.
+3. Create a default constructor:
+    - Initialize a = 10, b = 20.
+4. Define member function displayData() to print values of a and b.
+5. In main():
+    - Declare object obj of class Construct.
+    - Automatically, the default constructor is invoked.
+    - Call obj.displayData() to display values.
+6. End the program.
 
-### Program 2: Destructors 
+### Parameterized constructors
+
+1. Start program.
+2. Define a class construct with data members a and b.
+3. Define a parameterized constructor with parameters (m, n):
+    - Assign a = m, b = n.
+4. Define member function inputdata() to display a and b.
+5. In main():
+    - Create object aa(10,20) → parameterized constructor is called.
+   - Call aa.inputdata() to print values of a and b.
+6. End program.
+
+### Destructors 
 
 1. Start the program.
 2. Declare a global variable count and initialize it to 0.
